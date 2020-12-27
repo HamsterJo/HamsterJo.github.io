@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-bar"></div>
+    <div class="desktop">
+      <div class="background-icons">
+        <div class="icon">Test</div>
+        <div class="icon">Test</div>
+        <div class="icon">Test</div>
+        <div class="icon">Test</div>
+      </div>
+
+      <div class="window" id="1">
+        <div class="windowheader" id="windowheader1">
+          <div class="title">Title</div>
+          <div class="title-buttons">
+            <div class="infoBtn"><a href="" title="Information"><img src="./icons/info.svg" width="15" height="15"></a>
+            </div>
+            <div class="minimizeBtn"><a href="" title="Minimize"><img src="./icons/minimize.svg" width="15"
+                  height="3"></a>
+            </div>
+            <div class="maximizeBtn"><a href="" title="Maximize"><img src="./icons/maximize.svg" width="15"
+                  height="15"></a>
+            </div>
+            <div class="closeBtn"><a href="" title="Close"><img src="./icons/close.svg" width="15" height="15"></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-window">
+          <div class="terminal">
+            <div class="message-history">
+              <div class="message">User:~$ Hello</div>
+              <div class="message">User:~$ Hello</div>
+              <div class="message">User:~$ Hello</div>
+              <div class="message">oooooSettings.....-.....Open Settings</div>
+              <div class="message">oooooSettings.....-.....Open Settings</div>
+              <div class="message">oooooSettings.....-.....Open Settings</div>
+            </div>
+            <div class='message-input-field'>
+              <form class="message-form" autocomplete="message-form">
+                <input autofocus class='message-input' maxlength="144" placeholder="Type command...">
+              </form>
+              <span class="available-chars">0/144</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+-->
+      <div class="window" id=2 style="top: 50px">
+        <div class="windowheader" id="windowheader2">
+          <div class="title">Title</div>
+          <div class="title-buttons">
+            <div class="infoBtn"><a href="" title="Information"><img src="./icons/info.svg" width="15" height="15"></a>
+            </div>
+            <div class="minimizeBtn"><a href="" title="Minimize"><img src="./icons/minimize.svg" width="15"
+                  height="3"></a>
+            </div>
+            <div class="maximizeBtn"><a href="" title="Maximize"><img src="./icons/maximize.svg" width="15"
+                  height="15"></a>
+            </div>
+            <div class="closeBtn"><a href="" title="Close"><img src="./icons/close.svg" width="15" height="15"></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-window">
+          <div class="browser">
+            <div class="support-tool">
+              <div class="support-tool-side-nav">
+                <ul>
+                  <li>
+                    <h3><span>open Tickets</span></h3>
+                    <ul>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">more</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>
+                      <span>last Tickets</span>
+                    </h3>
+                    <ul>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">#123456</a></li>
+                      <li><a href="">more</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>
+                      <span>Tickets</span>
+                    </h3>
+                  </li>
+                  <li>
+                    <h3>
+                      <span>Settings</span>
+                    </h3>
+                  </li>
+                  <li>
+                    <h3>
+                      <span>Help</span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="support-tool-container">
+                <div class="tab-title">Tickets</div>
+                <table class="tickets-table">
+                  <tr>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>ID</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>12.01.2020</td>
+                    <td>Test01</td>
+                    <td>#265826589</td>
+                    <td>Problem with big P...</td>
+                    <td>O</td>
+                  </tr>
+                  <tr>
+                    <td>12.01.2020</td>
+                    <td>Test01</td>
+                    <td>#265826589</td>
+                    <td>Problem with big P...</td>
+                    <td>O</td>
+                  </tr>
+                  <tr>
+                    <td>12.01.2020</td>
+                    <td>Test01</td>
+                    <td>#265826589</td>
+                    <td>Problem with big P...</td>
+                    <td>O</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+-->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

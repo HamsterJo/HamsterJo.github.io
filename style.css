@@ -1,0 +1,277 @@
+@font-face {
+  font-family: Monoglyceride;
+  src: url(./fonts/Monoglyceride.ttf);
+}
+
+@font-face {
+  font-family: Anita;
+  src: url(./fonts/Anita.ttf);
+}
+
+@font-face {
+  font-family: atwriter;
+  src: url(./fonts/atwriter.ttf);
+}
+
+@font-face {
+  font-family: VarelaRound;
+  src: url(./fonts/VarelaRound.ttf);
+}
+
+:root {
+  --darkest: #121314;
+  --dark: #1C1D1F;
+  --grey: #393D40;
+  --light: #505559;
+  --lightest: #929CA6;
+  --fontLight: #adadad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VarelaRound';
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.top-bar {
+  flex: 0 1 auto;
+  background-color: red;
+  height: 50px;
+}
+
+.desktop {
+  position: relative;
+  flex: 1 auto;
+  background-color: var(--darkest);
+}
+
+.icon {
+  margin: 20px 15px;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+}
+
+.window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 520px;
+  height: 350px;
+  ;
+}
+
+.main-window {
+  min-height: 350px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+
+
+.windowheader {
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: var(--dark);
+  color: var(--light);
+  height: 30px;
+  line-height: 30px;
+  user-select: none;
+}
+
+.title-buttons {
+  display: flex;
+  float: right;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+}
+
+.title-buttons div {
+  filter: invert(33%) sepia(2%) saturate(1781%) hue-rotate(165deg) brightness(84%) contrast(77%);
+  margin: 4px;
+}
+
+.terminal {
+  background: #393D4075;
+  color: var(--fontLight);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-history {
+  position: relative;
+  flex: 1 auto;
+  overflow-y: scroll;
+  font-size: 15px;
+}
+
+.message-history::-webkit-scrollbar {
+  width: 12px;
+}
+
+.message-history::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.message-history::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.message-input-field {
+  bottom: 0;
+  display: flex;
+  border-top: solid 1px #121314;
+}
+
+.message-input-field form {
+  flex: 1;
+}
+
+.message-input {
+  background-color: transparent;
+  color: var(--fontLight);
+  ;
+  border: none;
+  outline: none;
+  appearance: none;
+  line-height: 20px;
+  height: 20px;
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.message-input-field:before {
+  content: '>';
+  margin: 5px;
+  color: var(--lightest);
+}
+
+.available-chars {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.browser {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.support-tool {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.support-tool-side-nav {
+  width: 150px;
+  color: white;
+  border-right: solid 1px #121314;
+}
+
+.support-tool-side-nav ul {
+  position: relative;
+}
+
+.support-tool-side-nav h3 {
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-weight: 500;
+  background: #238CDB;
+}
+
+.support-tool-side-nav li {
+  list-style-type: none;
+}
+
+.support-tool-side-nav ul ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 25px;
+  display: block;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.support-tool-side-nav ul ul li a:hover {
+  color: white;
+  background: #282728;
+  border-left: 5px solid#238cdb;
+}
+
+.support-tool-side-nav ul ul {
+  display: block;
+}
+
+.support-tool-side-nav li.active ul {
+  display: block;
+}
+
+.support-tool-container {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-title {
+  width: 100%;
+  background-color: #238CDB;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  padding-left: 10px;
+}
+
+.tickets-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tickets-table tr:nth-child(even) {
+  background-color: #a1d1f5;
+}
+
+.tickets-table tr:hover {
+  background-color: rgb(184, 184, 184);
+}
+
+.tickets-table th {
+  font-weight: 400;
+  background-color: #1D73B5;
+  color: white;
+}
